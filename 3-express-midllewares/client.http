@@ -1,0 +1,31 @@
+
+
+#buscar usuarios:
+GET http://localhost:3000/admin
+Authorization: 123456
+
+###
+
+#CRIAR USUARIO
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "julia"
+}
+
+###
+
+#atualizat usuario
+PUT  http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+  "name": "Bruna Marquezine"
+}
+
+
+###
+
+#Deletar ususario
+DELETE http://localhost:3000/users/3
