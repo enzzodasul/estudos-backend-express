@@ -1,0 +1,3 @@
+
+### TESTAR SERVIDOR
+GET http://localhost:3000/

@@ -6,8 +6,13 @@ const app = express();
 app.use(express.json());
 
 // ROTA QUE PROVOCA UM ERRO
-app.get('/erro', (req, res) => {
-    throw new Error('SOMETHING EXPECTED WENT WRONG');
+app.get('/erro', (req, res,next) => {
+  try{ throw new Error('SOMETHING EXPECTED WENT WRONG');
+
+  }catch (err) {
+    next(err)
+  }
+
 });
 
 //ROUTE NOT FOUND
