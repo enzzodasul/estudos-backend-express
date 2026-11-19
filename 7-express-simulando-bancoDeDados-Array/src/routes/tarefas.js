@@ -51,4 +51,13 @@ tarefa.concluida = !tarefa.concluida
 return res.json(tarefa)
 })
 
+//----------------------------------------------------------------
+//DELETE TASKS
 
+router.delete('/:id', (req,res) => {
+  const{id} =req.params
+
+  tarefas = tarefas.filter(tarefa => tarefa.id !== Number(id))
+  return res.status(204).json()
+  console.log ("usuario deletado com sucesso ")
+})

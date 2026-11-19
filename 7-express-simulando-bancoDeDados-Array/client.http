@@ -5,21 +5,26 @@ GET http://localhost:3000/tarefas
 
 
 
-### CREATE TASK
+### CREATE TASK (POST)
 POST http://localhost:3000/tarefas
 Content-Type: application/json
 
 {
-  "titulo": "estudar banco de dados"
+  "titulo": "estudar java"
+}
+
+### UPDATE TASK (PUT)
+
+PUT http://localhost:3000/tarefas/2
+Content-Type: application/json
+
+{
+  "titulo" : "study java script "
 }
 
 ###
 
-PUT http://localhost:3000
-
-###
-
-DELETE http://localhost:3000
+DELETE http://localhost:3000/tarefas/2
 
 ###
 
