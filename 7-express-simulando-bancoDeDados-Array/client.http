@@ -1,0 +1,25 @@
+###
+//list of tasks
+
+GET http://localhost:3000/tarefas
+
+
+
+### CREATE TASK
+POST http://localhost:3000/tarefas
+Content-Type: application/json
+
+{
+  "titulo": "estudar banco de dados"
+}
+
+###
+
+PUT http://localhost:3000
+
+###
+
+DELETE http://localhost:3000
+
+###
+
