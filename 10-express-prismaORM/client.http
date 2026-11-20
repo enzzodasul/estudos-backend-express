@@ -1,0 +1,28 @@
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "ZEQUINHA DA MARIA",
+  "email": "ZEQUINHA@email.com",
+  "phone": "0101002020"
+}
+
+###
+
+GET http://localhost:3000/users
+
+###
+
+PUT http://localhost:3000/users/9fd4e392-f32c-4bd1-8841-0b2143e169a4
+Content-Type: application/json
+
+{
+  "name": "zeca pagodinho",
+  "email": "zecapagodinho@email.com",
+  "phone": "818513168313"
+}
+
+
+###
+DELETE http://localhost:3000/users/f2fbec90-039a-44fd-8457-e99dbc4eb5fc
+
